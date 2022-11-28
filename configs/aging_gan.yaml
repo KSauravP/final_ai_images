@@ -1,6 +1,6 @@
 # Data configs
-domainA_dir: 'output/trainA'
-domainB_dir: 'output/trainB'
+domainA_dir: 'output/train/trainA'
+domainB_dir: 'output/train/trainB'
 
 # Network Configs
 ngf: 32
