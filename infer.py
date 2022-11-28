@@ -20,7 +20,7 @@ def main():
     image_paths = [os.path.join(args.image_dir, x) for x in os.listdir(args.image_dir) if
                    x.endswith('.png') or x.endswith('.jpg')]
     model = Generator(ngf=32, n_residual_blocks=9)
-    ckpt = torch.load('lightning_logs/version_0/checkpoints/epoch=0-step=4756.ckpt', map_location='cpu')
+    ckpt = torch.load('lightning_logs/version_0/checkpoints/epoch=39-step=40880.ckpt', map_location='cpu')
     # ckpt = torch.load('pretrained_model/35_net_G.pth', map_location='cpu')
     new_state_dict = {}
     for k, v in ckpt['state_dict'].items():
